@@ -1,0 +1,47 @@
+//nav
+.navbar {
+  background-color: $color-primary;
+}
+
+.nav-item a {
+  color: $gray-0;
+}
+
+.nav-item.active a {
+  color: $orange-500;
+}
+
+//dropmenu
+.dropdown-menu a {
+  color: $color-primary;
+}
+
+//deco
+/*標題裝飾物*/
+.deco_line::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  border-left: 60px solid #f2522e;
+  background-color: #f6c4c3;
+}
+
+#sidebarReg .register {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 15%;
+  z-index: 10;
+  padding: 25px 10px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  background-color: #f2522e;
+  box-shadow: 2px 3px 8px 0px rgb(94 63 55 / 32%);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  writing-mode: vertical-lr;
+}

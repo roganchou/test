@@ -1,0 +1,138 @@
+/* ----------------------------------------------------------------
+	Basic
+-----------------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $bg-primary;
+    color: $text-primary;
+    font-size: $font-size-default;
+    line-height: 1.65;
+    font-family: "Noto Sans CJK", "Microsoft JhengHei", "PingFang TC", sans-serif, serif, arial;
+    font-weight: 900;
+}
+
+a,
+a:hover,
+a:active {
+    color: $color-primary;
+    text-decoration: none;
+}
+
+::placeholder {
+    color: $color-secondary;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: $color-secondary;
+}
+
+::-ms-input-placeholder {
+    color: $color-secondary;
+}
+
+dl,
+dt,
+dd,
+ol,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    font-size: 0px;
+    height: 0px;
+    line-height: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 取消各種input的外誆 */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus {
+    border-color: #e8e8e8;
+    box-shadow: 0 none;
+}
+
+/* 取消btn的外誆 */
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@mixin selection {
+    background: $primary-500;
+    color: $gray-0;
+    text-shadow: none;
+}
+
+::selection {
+    @include selection;
+}
+
+::-moz-selection {
+    @include selection;
+}
+
+::-webkit-selection {
+    @include selection;
+}
+
+:active,
+:focus {
+    outline: none !important;
+}
+
+/* typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin-bottom: 0;
+    color: $color-primary;
+}
+
+//font-size
+.font-s {
+    font-size: $font-size-small;
+}
+
+.font-d {
+    font-size: $font-size-default;
+}
+
+.font-m {
+    font-size: $font-size-medium;
+}
+
+.font-l {
+    font-size: $font-size-large;
+}

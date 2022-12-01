@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/* ----------------------------------------------------------------
+	Basic
+-----------------------------------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  color: #333333;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  font-family: "Noto Sans CJK", "Microsoft JhengHei", "PingFang TC", sans-serif, serif, arial;
+  font-weight: 900;
+}
+
+a,
+a:hover,
+a:active {
+  color: #2D3B9C;
+  text-decoration: none;
+}
+
+::-moz-placeholder {
+  color: #8189C4;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #8189C4;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #8189C4;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #8189C4;
+}
+
+::-ms-input-placeholder {
+  color: #8189C4;
+}
+
+dl,
+dt,
+dd,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  font-size: 0px;
+  height: 0px;
+  line-height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 取消各種input的外誆 */
+textarea:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=time]:focus,
+input[type=week]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=color]:focus {
+  border-color: #e8e8e8;
+  box-shadow: 0 none;
+}
+
+/* 取消btn的外誆 */
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+::-moz-selection {
+  background: #2D3B9C;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+::selection {
+  background: #2D3B9C;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #2D3B9C;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+::-webkit-selection {
+  background: #2D3B9C;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+:active,
+:focus {
+  outline: none !important;
+}
+
+/* typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0;
+  color: #2D3B9C;
+}
+
+.font-s {
+  font-size: 0.75rem;
+}
+
+.font-d {
+  font-size: 0.875rem;
+}
+
+.font-m {
+  font-size: 1rem;
+}
+
+.font-l {
+  font-size: 3rem;
+}
+
+.navbar {
+  background-color: #2D3B9C;
+}
+
+.nav-item a {
+  color: #FFFFFF;
+}
+
+.nav-item.active a {
+  color: #FFBB33;
+}
+
+.dropdown-menu a {
+  color: #2D3B9C;
+}
+
+/*標題裝飾物*/
+.deco_line::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  border-left: 60px solid #f2522e;
+  background-color: #f6c4c3;
+}
+
+#sidebarReg .register {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 15%;
+  z-index: 10;
+  padding: 25px 10px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  background-color: #f2522e;
+  box-shadow: 2px 3px 8px 0px rgba(94, 63, 55, 0.32);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+}/*# sourceMappingURL=custom.css.map */
